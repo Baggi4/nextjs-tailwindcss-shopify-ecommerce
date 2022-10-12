@@ -5,6 +5,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   safelist: ["outline-none"],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    // ...
+  ],
   theme: {
     extend: {
       maxWidth: {
@@ -53,6 +57,9 @@ module.exports = {
       },
       scale: {
         120: "1.2",
+      },
+      aspectRatio: {
+        '4/3': '4 / 3',
       },
     },
   },

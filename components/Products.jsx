@@ -68,15 +68,15 @@ const staticProducts = [
 
 export default function Example() {
   return (
-    <div className="mx-auto max-w-2xl pt-24 px-4 sm:pt-32 sm:px-6 lg:max-w-7xl lg:px-8">
-      <h2 id="products-heading" className="sr-only">
+    <div className="mx-auto max-w-2xl pt-24 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8">
+      <h2 id="products-heading" className="text-center sm:py-12 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
         Products
       </h2>
 
-      <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+      <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8 ">
         {staticProducts.map((product) => (
-          <a key={product.id} href={product.href} className="group">
-            <div className="aspect-w-1 aspect-h-1 h-72 w-full overflow-hidden rounded-lg">
+          <a key={product.id} href={product.href} className="group hover:scale-105">
+            <div className="aspect-w-4 aspect-h-3 overflow-hidden rounded-lg ">
               <img
                 src={product.imageSrc}
                 alt={product.imageAlt}
