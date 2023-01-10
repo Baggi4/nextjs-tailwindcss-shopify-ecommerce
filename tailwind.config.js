@@ -7,7 +7,6 @@ module.exports = {
   safelist: ["outline-none"],
   plugins: [
     require('@tailwindcss/aspect-ratio'),
-    // ...
   ],
   theme: {
     extend: {
