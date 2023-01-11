@@ -1,13 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;700;800;900&display=swap");
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Gothic A1", sans-serif;
 }
 
 a {
@@ -54,6 +53,70 @@ a {
   to {
     transform: translateX(-50%);
   }
+}
+/* heroBanner*/
+.hero-banner-container {
+  margin-top: 20px;
+  padding: 100px 40px;
+  background-color: gray;
+  border-radius: 10px;
+  position: relative;
+  height: 500px;
+  line-height: 0.9;
+  width: 100%;
+}
+.hero-banner-container .beats-solo {
+  font-size: 20px;
+}
+.hero-banner-container button {
+  padding: 10px 16px;
+  background-color: #000;
+  color: white;
+  border: none;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 10000 !important;
+}
+.hero-banner-container h3 {
+  font-size: 4rem;
+  margin-top: 4px;
+}
+.hero-banner-container h1 {
+  color: white;
+  font-size: 10em;
+  margin-left: -20px;
+  text-transform: uppercase;
+}
+.hero-banner-image{
+  position: absolute;
+  z-index: -1;
+  top: 0%;
+  width: 600px;
+  height: 450px;
+}
+.desc {
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+  width: 300px;
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  color: #324d67;
+}
+.desc p {
+  color: #5f5f5f;
+  font-weight: 100;
+  text-align: end;
+}
+.desc h5 {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  /* color: black; */
+  align-self: flex-end;
 }
 
 span.text-red {
@@ -224,45 +287,6 @@ span.text-red {
   -moz-user-select: none;
   user-select: none;
 }
-.hero-banner-container {
-  padding: 100px 40px;
-  position: relative;
-  height: 500px;
-  line-height: 0.9;
-  width: 100%;
-}
-.hero-banner-container .beats-solo {
-  font-size: 20px;
-}
-.hero-banner-container button {
-  border-radius: 15px;
-  padding: 10px 16px;
-  background-color: #f02d34;
-  color: white;
-  border: none;
-  margin-top: 40px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  z-index: 10000 !important;
-}
-
-.hero-banner-container h3 {
-  font-size: 4rem;
-  margin-top: 4px;
-}
-.hero-banner-container h1 {
-  color: white;
-  font-size: 10em;
-  margin-left: -20px;
-  text-transform: uppercase;
-}
-.hero-banner-image {
-  position: absolute;
-  margin: 0 auto;
-  width: 450px;
-  height: 450px;
-}
 
 .desc {
   position: absolute;
@@ -287,76 +311,22 @@ span.text-red {
   align-self: flex-end;
 }
 .products-heading {
-  text-align: center;
-  margin: 40px 0px;
+  margin: 10px 40px;
   color: #324d67;
 }
 .products-heading h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 800;
-  text-transform: upppercase;
+  text-transform: uppercase;
+  text-align: left;
   color: black;
-  font-family: "Didact Gothic", sans-serif;
 }
 .products-heading p {
   font-size: 16px;
   font-weight: 200;
+  text-align: left;
 }
-.footer-banner-container {
-  padding: 100px 40px;
-  background-color: #f02d34;
-  border-radius: 15px;
-  position: relative;
-  height: 400px;
-  line-height: 1;
-  color: white;
-  width: 100%;
-  margin-top: 120px;
-}
-.banner-desc {
-  display: flex;
-  justify-content: space-between;
-}
-.banner-desc button {
-  border-radius: 15px;
-  padding: 10px 16px;
-  background-color: white;
-  color: red;
-  border: none;
-  margin-top: 40px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-}
-.banner-desc .left h3 {
-  font-weight: 900;
-  font-size: 80px;
-  margin-left: 25px;
-}
-.banner-desc .left p {
-  margin: 18px;
-}
-.footer-banner-image {
-  position: absolute;
-  /* top: -35%;
-  left: 8%; */
-  top: -25%;
-  left: 25%;
-}
-.banner-desc .right {
-  line-height: 1.4;
-}
-.banner-desc .right h3 {
-  font-weight: 800;
-  font-size: 60px;
-}
-.banner-desc .right p {
-  font-size: 18px;
-}
-.banner-desc .right .company-desc {
-  font-size: 14px;
-  font-weight: 300;
-}
+
 .cart-wrapper {
   width: 100vw;
   position: fixed;
@@ -597,7 +567,6 @@ span.text-red {
 }
 .buttons .buy-now {
   width: 200px;
-
   padding: 10px 20px;
   background-color: #f02d34;
   color: white;
@@ -842,15 +811,5 @@ span.text-red {
   .btn-container {
     width: 300px;
     margin: auto;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
   }
 }

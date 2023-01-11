@@ -4,31 +4,45 @@ import { Cart } from "./";
 import { useStateContext } from "../context/StateContext";
 import Image from "next/image";
 import Logo from "../public/img/logo_500x500.png"
+import Logo2 from "../public/img/logo.png"
 
 const Navbar = () => {
   const { showCart, setShowCart, totalQuantities } = useStateContext();
 
   return (
     <div className="bg-white shadow">
-      <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
-        <div className="flex h-16 justify-between">
-          <div className="flex px-2 lg:px-0">
+      <div className="mx-auto max-w-7xl px-2 sm:px-4">
+        <div className="flex h-20 justify-between">
+          <div className="flex p-2 lg:px-0">
             <div className="flex flex-shrink-0 items-center">
               <Link href="/" alt="acceuil">
                 <Image
                   className="block w-auto"
                   src={Logo}
                   alt="tailwind logo"
-                  width={40}
-                  height={40}
+                  width={75}
+                  height={75}
                 />
               </Link>
             </div>
           </div>
-          <div className="flex justify-between h-16 px-2 lg:px-0 ">
+          <div className="flex lg:px-0">
+            <div className="flex items-center">
+              <Link href="/" alt="acceuil">
+                <Image
+                  className="block w-auto"
+                  src={Logo2}
+                  alt="tailwind logo"
+                  width={200}
+                  height={78}
+                />
+              </Link>
+            </div>
+          </div>
+          <div className="flex justify-between h-20 px-2 lg:px-0 ">
             <button
               type="button"
-              className="rounded-full hover:text-gray-500 hover:scale-120 "
+              className="rounded-full transition hover:text-gray-500 hover:scale-120 "
               onClick={() => setShowCart(true)}
             >
               <span className="cart-item-qty">{totalQuantities}</span>

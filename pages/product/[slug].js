@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
-
+import Breadcrumbs from '../../components/Breadcrumbs';
 import { client, urlFor } from '../../lib/client';
 import { Product } from '../../components';
 import { useStateContext } from '../../context/StateContext';
@@ -17,7 +17,11 @@ const ProductDetails = ({ product, products }) => {
   }
 
   return (
-    <div>
+    
+    <>
+    <header>     
+      <Breadcrumbs key={product._name} product={product} />
+    </header>
       <div className="product-detail-container">
         <div>
           <div className="image-container">
@@ -68,7 +72,7 @@ const ProductDetails = ({ product, products }) => {
       </div>
 
       <div className="maylike-products-wrapper">
-          <h2>You may also like</h2>
+          <h2>Customers also bought</h2>
           <div className="marquee">
             <div className="maylike-products-container track">
               {products.map((item) => (
@@ -77,7 +81,7 @@ const ProductDetails = ({ product, products }) => {
             </div>
           </div>
       </div>
-    </div>
+    </>
   )
 }
 
