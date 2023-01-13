@@ -2,7 +2,7 @@ import { HomeIcon } from '@heroicons/react/20/solid'
 
 const Breadcrumbs = ({ product }) => {
   return (
-    <nav className="flex mt-0.5 bg-black" aria-label="Breadcrumb">
+    <nav className="flex mt-0.5 bg-sky-800" aria-label="Breadcrumb">
       <ol role="list" className="mx-auto flex w-full max-w-screen-xl space-x-4 px-4 sm:px-6 lg:px-8">
         <li className="flex">
           <div className="flex items-center">
@@ -26,7 +26,7 @@ const Breadcrumbs = ({ product }) => {
               </svg>
               <p
                 
-                className="ml-4 text-sm font-bold text-sky-800 hover:text-gray-500"
+                className="ml-4 text-sm font-bold text-sky-50 hover:text-gray-500"
                 aria-current={product.current ? 'page' : undefined}
               >
                 {product.name}

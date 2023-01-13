@@ -5,3 +5,6 @@ export { default as Product } from './Product';
 export { default as HeroBanner } from './HeroBanner';
 export { default as Cart } from './Cart';
 export { default as Breadcrumbs } from './Breadcrumbs';
+export { default as Logocloud } from './Logocloud';
+export { default as Category } from './Category'
+export { default as Header } from './Header'

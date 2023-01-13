@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 
+import Header from './Header'
 import Navbar from './Navbar';
 import Footer from './Footer';
 
@@ -35,9 +36,7 @@ const Layout = ({ children }) => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <header>
-        <Navbar />
-      </header>
+      <Header />
       <main className="main-container">
         {children}
       </main>

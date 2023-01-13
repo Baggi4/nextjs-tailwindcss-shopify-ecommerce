@@ -229,7 +229,7 @@ export default function Example() {
                           key={category.name}
                           className={({ selected }) =>
                             classNames(
-                              selected ? 'text-indigo-600 border-indigo-600' : 'text-gray-900 border-transparent',
+                              selected ? 'text-sky-600 border-sky-600' : 'text-gray-900 border-transparent',
                               'flex-1 whitespace-nowrap border-b-2 py-4 px-1 text-base font-medium'
                             )
                           }
@@ -365,7 +365,7 @@ export default function Example() {
                     <span className="sr-only">Your Company</span>
                     <img
                       className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                      src="https://tailwindui.com/img/logos/mark.svg?color=sky&shade=600"
                       alt=""
                     />
                   </a>
@@ -382,14 +382,14 @@ export default function Example() {
                               <div className="relative flex">
                                 <Popover.Button
                                   className={classNames(
-                                    open ? 'text-indigo-600' : 'text-gray-700 hover:text-gray-800',
+                                    open ? 'text-sky-600' : 'text-gray-700 hover:text-gray-800',
                                     'relative flex items-center justify-center text-sm font-medium transition-colors duration-200 ease-out'
                                   )}
                                 >
                                   {category.name}
                                   <span
                                     className={classNames(
-                                      open ? 'bg-indigo-600' : '',
+                                      open ? 'bg-sky-600' : '',
                                       'absolute inset-x-0 -bottom-px z-20 h-0.5 transition duration-200 ease-out'
                                     )}
                                     aria-hidden="true"
@@ -488,7 +488,7 @@ export default function Example() {
                 <a href="#" className="lg:hidden">
                   <span className="sr-only">Your Company</span>
                   <img
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    src="https://tailwindui.com/img/logos/mark.svg?color=sky&shade=600"
                     alt=""
                     className="h-8 w-auto"
                   />
@@ -566,7 +566,7 @@ export default function Example() {
               <div className="mt-4 sm:mt-6">
                 <a
                   href="#"
-                  className="inline-block rounded-md border border-transparent bg-indigo-600 py-3 px-8 font-medium text-white hover:bg-indigo-700"
+                  className="inline-block rounded-md border border-transparent bg-sky-600 py-3 px-8 font-medium text-white hover:bg-sky-700"
                 >
                   Shop Collection
                 </a>
@@ -621,7 +621,7 @@ export default function Example() {
               <h2 id="favorites-heading" className="text-2xl font-bold tracking-tight text-gray-900">
                 Trending Products
               </h2>
-              <a href="#" className="hidden text-sm font-medium text-indigo-600 hover:text-indigo-500 md:block">
+              <a href="#" className="hidden text-sm font-medium text-sky-600 hover:text-sky-500 md:block">
                 Shop the collection
                 <span aria-hidden="true"> &rarr;</span>
               </a>
@@ -650,7 +650,7 @@ export default function Example() {
             </div>
 
             <div className="mt-8 text-sm md:hidden">
-              <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+              <a href="#" className="font-medium text-sky-600 hover:text-sky-500">
                 Shop the collection
                 <span aria-hidden="true"> &rarr;</span>
               </a>
@@ -696,7 +696,7 @@ export default function Example() {
               {/* Image section */}
               <div className="col-span-1 md:col-span-2 lg:col-start-1 lg:row-start-1">
                 <img
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  src="https://tailwindui.com/img/logos/mark.svg?color=sky&shade=600"
                   alt=""
                   className="h-8 w-auto"
                 />
@@ -757,12 +757,12 @@ export default function Example() {
                     type="text"
                     autoComplete="email"
                     required
-                    className="w-full min-w-0 appearance-none rounded-md border border-gray-300 bg-white py-2 px-4 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+                    className="w-full min-w-0 appearance-none rounded-md border border-gray-300 bg-white py-2 px-4 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500"
                   />
                   <div className="ml-4 flex-shrink-0">
                     <button
                       type="submit"
-                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-sky-600 py-2 px-4 text-base font-medium text-white shadow-sm hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
                     >
                       Sign up
                     </button>

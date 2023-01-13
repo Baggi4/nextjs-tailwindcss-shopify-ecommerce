@@ -345,7 +345,7 @@ export default function Example() {
                           key={category.name}
                           className={({ selected }) =>
                             classNames(
-                              selected ? 'text-indigo-600 border-indigo-600' : 'text-gray-900 border-transparent',
+                              selected ? 'text-sky-600 border-sky-600' : 'text-gray-900 border-transparent',
                               'flex-1 whitespace-nowrap border-b-2 py-4 px-1 text-base font-medium'
                             )
                           }
@@ -472,14 +472,14 @@ export default function Example() {
                           <div className="relative flex">
                             <Popover.Button
                               className={classNames(
-                                open ? 'text-indigo-600' : 'text-gray-700 hover:text-gray-800',
+                                open ? 'text-sky-600' : 'text-gray-700 hover:text-gray-800',
                                 'relative z-10 flex items-center justify-center text-sm font-medium transition-colors duration-200 ease-out'
                               )}
                             >
                               {category.name}
                               <span
                                 className={classNames(
-                                  open ? 'bg-indigo-600' : '',
+                                  open ? 'bg-sky-600' : '',
                                   'absolute inset-x-0 bottom-0 h-0.5 transition-colors duration-200 ease-out sm:mt-5 sm:translate-y-px sm:transform'
                                 )}
                                 aria-hidden="true"
@@ -587,7 +587,7 @@ export default function Example() {
                 <span className="sr-only">Your Company</span>
                 <img
                   className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  src="https://tailwindui.com/img/logos/mark.svg?color=sky&shade=600"
                   alt=""
                 />
               </a>
@@ -654,7 +654,7 @@ export default function Example() {
                           </span>
                           <span
                             className={classNames(
-                              selected ? 'ring-indigo-500' : 'ring-transparent',
+                              selected ? 'ring-sky-500' : 'ring-transparent',
                               'pointer-events-none absolute inset-0 rounded-md ring-2 ring-offset-2'
                             )}
                             aria-hidden="true"
@@ -697,7 +697,7 @@ export default function Example() {
                       <StarIcon
                         key={rating}
                         className={classNames(
-                          product.rating > rating ? 'text-indigo-500' : 'text-gray-300',
+                          product.rating > rating ? 'text-sky-500' : 'text-gray-300',
                           'h-5 w-5 flex-shrink-0'
                         )}
                         aria-hidden="true"
@@ -758,7 +758,7 @@ export default function Example() {
                 <div className="mt-10 flex">
                   <button
                     type="submit"
-                    className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-8 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
+                    className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-sky-600 py-3 px-8 text-base font-medium text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                   >
                     Add to bag
                   </button>
@@ -787,7 +787,7 @@ export default function Example() {
                             <Disclosure.Button className="group relative flex w-full items-center justify-between py-6 text-left">
                               <span
                                 className={classNames(
-                                  open ? 'text-indigo-600' : 'text-gray-900',
+                                  open ? 'text-sky-600' : 'text-gray-900',
                                   'text-sm font-medium'
                                 )}
                               >
@@ -796,7 +796,7 @@ export default function Example() {
                               <span className="ml-6 flex items-center">
                                 {open ? (
                                   <MinusIcon
-                                    className="block h-6 w-6 text-indigo-400 group-hover:text-indigo-500"
+                                    className="block h-6 w-6 text-sky-400 group-hover:text-sky-500"
                                     aria-hidden="true"
                                   />
                                 ) : (
@@ -877,7 +877,7 @@ export default function Example() {
               {/* Image section */}
               <div className="col-span-1 md:col-span-2 lg:col-start-1 lg:row-start-1">
                 <img
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  src="https://tailwindui.com/img/logos/mark.svg?color=sky&shade=600"
                   alt=""
                   className="h-8 w-auto"
                 />
@@ -938,12 +938,12 @@ export default function Example() {
                     type="text"
                     autoComplete="email"
                     required
-                    className="w-full min-w-0 appearance-none rounded-md border border-gray-300 bg-white py-2 px-4 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+                    className="w-full min-w-0 appearance-none rounded-md border border-gray-300 bg-white py-2 px-4 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500"
                   />
                   <div className="ml-4 flex-shrink-0">
                     <button
                       type="submit"
-                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-sky-600 py-2 px-4 text-base font-medium text-white shadow-sm hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
                     >
                       Sign up
                     </button>

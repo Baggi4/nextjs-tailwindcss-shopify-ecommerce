@@ -34,9 +34,10 @@ const navigation = {
     { name: 'Partners', href: '#' },
   ],
   legal: [
-    { name: 'Claim', href: '#' },
+    { name: 'Content policy', href: '#' },
     { name: 'Privacy', href: '#' },
     { name: 'Terms', href: '#' },
+    { name: 'About', href: '#' },
   ],
   social: [
     {
@@ -105,7 +106,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-white mt-16 border-t border-gray-900/10" aria-labelledby="footer-heading">
+    <footer className="bg-stone-50 mt-16 border-t border-gray-900/10" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -180,13 +181,13 @@ export default function Footer() {
                 id="email-address"
                 autoComplete="email"
                 required
-                className="w-full min-w-0 appearance-none rounded-md border-gray-300 bg-white px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-gray-900 placeholder-gray-400 shadow-sm focus:border-indigo-600 focus:ring-indigo-600 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
+                className="w-full min-w-0 appearance-none rounded-sm border-gray-300 bg-white px-[calc(theme(spacing.3)-1px)] py-[calc(theme(spacing[1.5])-1px)] text-base leading-7 text-gray-900 placeholder-gray-400 shadow-sm sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
                 placeholder="Enter your email"
               />
-              <div className="mt-4 rounded-md sm:mt-0 sm:ml-4 sm:flex-shrink-0">
+              <div className="mt-4 rounded-sm sm:mt-0 sm:ml-4 sm:flex-shrink-0">
                 <button
                   type="submit"
-                  className="flex w-full items-center justify-center rounded-md bg-indigo-600 py-1.5 px-3 text-base font-semibold leading-7 text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:text-sm sm:leading-6"
+                  className="flex w-full items-center justify-center rounded-sm bg-black py-1.5 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600 sm:text-sm sm:leading-6"
                 >
                   Subscribe
                 </button>
@@ -197,7 +198,7 @@ export default function Footer() {
         <div className="mt-16 border-t border-gray-900/10">
             <div className="mt-10 flex justify-center space-x-10">
             {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+              <a key={item.name} href={item.href} className="text-gray-600 hover:text-sky-900">
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
               </a>

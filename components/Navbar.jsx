@@ -4,37 +4,36 @@ import { Cart } from "./";
 import { useStateContext } from "../context/StateContext";
 import Image from "next/image";
 import Logo from "../public/img/logo_500x500.png"
-import Logo2 from "../public/img/logo.png"
 
 const Navbar = () => {
   const { showCart, setShowCart, totalQuantities } = useStateContext();
 
   return (
-    <div className="bg-white shadow">
+    <div className="bg-stone-50 shadow-md">
       <div className="mx-auto max-w-7xl px-2 sm:px-4">
         <div className="flex h-20 justify-between">
           <div className="flex p-2 lg:px-0">
             <div className="flex flex-shrink-0 items-center">
               <Link href="/" alt="acceuil">
                 <Image
-                  className="block w-auto"
+                  className="block w-auto sm:w-1/2 sm:h-1/2"
                   src={Logo}
                   alt="tailwind logo"
-                  width={75}
-                  height={75}
+                  width={50}
+                  height={52}
                 />
               </Link>
             </div>
           </div>
-          <div className="flex lg:px-0">
-            <div className="flex items-center">
+          <div className="lg:px-0 hidden lg:flex">
+            <div className="flex items-center ">
               <Link href="/" alt="acceuil">
                 <Image
                   className="block w-auto"
                   src={Logo2}
                   alt="tailwind logo"
-                  width={200}
-                  height={78}
+                  width={160}
+                  height={50}
                 />
               </Link>
             </div>
@@ -52,7 +51,7 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6"
+                className="w-8 h-8"
               >
                 <path
                   strokeLinecap="round"
@@ -61,7 +60,6 @@ const Navbar = () => {
                 />
               </svg>
             </button>
-
             {showCart && <Cart />}
           </div>
         </div>
